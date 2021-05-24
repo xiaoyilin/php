@@ -1,0 +1,9 @@
+FROM ubuntu:20.04
+MAINTAINER xiaoyilin 406735078@qq.com
+# PHP7.4配合Apache
+# 安装PHP和Apache PHP模块
+RUN apt update && apt install php7.4 libapache2-mod-php7.4  apache2  php7.4-mysql
+# PHP7.4配合Nginx
+# 安装PHP和PHP FPM软件包
+# RUN apt update && apt install php7.4 php7.4-fpm php7.4-mysql
+EXPOSE 80
